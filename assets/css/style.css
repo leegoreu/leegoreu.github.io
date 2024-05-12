@@ -512,6 +512,12 @@ main {
  * #service 
  */
 
+ .language-proficiency li {
+  color: white; /* Set the color of all list items to white */
+}
+
+
+
 .service { margin-bottom: 35px; }
 
 .service-title { margin-bottom: 20px; }
@@ -559,6 +565,40 @@ main {
 /**
  * #testimonials 
  */
+
+ .awards-list {
+  list-style: none; /* Removes default bullet points */
+  padding-left: 0;
+}
+
+.award-item {
+  margin-bottom: 15px; /* Spacing between items */
+}
+
+.award-item::before {
+  content: '★'; /* Custom bullet symbol - can be changed */
+  color: var(--vegas-gold); /* Custom color for the bullet point */
+  font-size: 20px; /* Size of the bullet symbol */
+  margin-right: 10px; /* Spacing between bullet and text */
+  vertical-align: middle;
+}
+
+.award-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFFFFF; /* Changed title color to white */
+}
+
+.award-description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #FFFFFF; /* Changed description color to white */
+}
+.highlight-date {
+  color: var(--vegas-gold); /* Yellow color */
+}
+
+
 
 .testimonials { margin-bottom: 30px; }
 
@@ -833,6 +873,36 @@ main {
 /**
  * skills 
  */
+ .skill-text {
+  color: #FFFFFF; /* Sets the text color to white */
+  font-size: 14px;
+  
+  
+}
+.skill-item-title{
+  color: var(--vegas-gold);
+  
+
+  font-size: 20px;
+}
+/* This will add some space above the Programming Skills title */
+.programming-skills .title-wrapper {
+  margin-top: 20px; /* Adjust the value as needed */
+}
+.programming-skills .title-wrapper {
+  margin-bottom: 5px; /* Reduce this value as needed */
+}
+
+/* This will add bullet points to your list items */
+.programming-skills .skills-list .skill-item {
+  list-style-type: disc; /* This creates the bullet */
+  color: white;
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+  margin-left: 40px; /* This indents the list items to align with the content above */
+}
+
+
 
 .skills-title { margin-bottom: 20px; }
 
